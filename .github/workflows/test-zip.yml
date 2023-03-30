@@ -16,5 +16,5 @@ jobs:
 
     steps:
       - name: Zip Assets
-        run: Get-ChildItem -Path Get-Location #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
+        run:  Get-Location | Get-Child-Item  -Include * -Path #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
         shell: powershell
