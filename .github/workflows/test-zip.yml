@@ -1,0 +1,20 @@
+name: Test Zip
+
+on:
+  push:
+    branches:
+      - "!*"
+    tags:
+      - "v*"
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+      - name: Zip Assets
+        run: Compress-Archive -LiteralPath ../ui/extra -DestinationPath ../target/release/assets.zip
+        shell: powershell
