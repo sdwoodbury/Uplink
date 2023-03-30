@@ -16,5 +16,5 @@ jobs:
 
     steps:
       - name: Zip Assets
-        run: $loc = Get-Location; ls -Path $loc #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
+        run: ls -Path "D:\a\Uplink\Uplink" #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
         shell: powershell
