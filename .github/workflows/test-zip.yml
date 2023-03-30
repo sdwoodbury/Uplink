@@ -16,5 +16,5 @@ jobs:
 
     steps:
       - name: Zip Assets
-        run: ls -Path "D:\a\Uplink\Uplink" #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
+        run: Get-ChildItem -Path Get-Location #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
         shell: powershell
