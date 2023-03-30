@@ -16,5 +16,5 @@ jobs:
 
     steps:
       - name: Zip Assets
-        run: ls | echo #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
+        run: Get-Location #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
         shell: powershell
