@@ -44,10 +44,6 @@ jobs:
       - name: Build Uplink
         run: cargo build --release --package uplink
       
-      - name: Zip Assets
-        run: Compress-Archive -LiteralPath ../ui/extra -DestinationPath ../target/release/assets.zip
-        shell: powershell
-      
       - name: Build Installer 
         run: cargo wix --package uplink --no-build --nocapture
 
