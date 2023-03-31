@@ -16,5 +16,5 @@ jobs:
 
     steps:
       - name: Zip Assets
-        run:  Write-Verbose (Get-ChildItem -LiteralPath (Get-Location)) #Compress-Archive -LiteralPath ui/extra -DestinationPath ui/extra
+        run:  Compress-Archive -Path .\ui\extra -DestinationPath .\ui\extra\assets.zip
         shell: powershell
