@@ -132,8 +132,7 @@
                     </Directory>
 					
 					<Component Id="cmpAssetsZip"  Guid="9a6d3629-42ef-4b70-b195-9be60c5deeae">
-							
-						<File Id="filAssetsZip" Name='assets.zip' DiskId='1' KeyPath='yes' Source="$(var.CargoTargetBinDir)\assets.zip" />
+						<File Id="filAssetsZip" Name='extra.zip' DiskId='1' KeyPath='yes' Source="$(var.CargoTargetBinDir)\extra.zip" />
 						<RemoveFile Id="RemoveFilesFromAppilcationDirectory" Name="*.*" On="uninstall" />
 					</Component>
                 </Directory>
